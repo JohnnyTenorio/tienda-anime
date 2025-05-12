@@ -1,2 +1,0 @@
-# tienda-anime
-Tienda Online
