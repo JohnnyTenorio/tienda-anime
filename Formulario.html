@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Información</title>
+  <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+
+  <div class="formulario">
+    <h3 class="titulo-formulario">Formulario de Información</h3>
+
+    <form>
+      <div class="campo">
+        <label for="nombre">Ingrese su Nombre:</label>
+        <input type="text" placeholder="Escribe el Nombre" name="nombre" id="nombre" maxlength="20">
+      </div>
+
+      <div class="campo">
+        <label for="apellido">Ingrese su Apellido:</label>
+        <input type="text" placeholder="Escribe el Apellido" name="apellido" id="apellido" maxlength="20">
+      </div>
+
+      <div class="campo">
+        <label for="clave">Contraseña:</label>
+        <input type="password" placeholder="Escribe la contraseña" name="clave" id="clave" maxlength="20">
+      </div>
+
+      <div class="campo">
+        <label for="email">Ingrese Email:</label>
+        <input type="email" placeholder="Escriba email" id="email" name="email">
+      </div>
+
+      <div class="campo">
+        <label>Seleccione los dispositivos:</label>
+        <input type="checkbox" name="dispositivo" value="computador">Computador
+        <input type="checkbox" name="dispositivo" value="laptop">Laptop
+        <input type="checkbox" name="dispositivo" value="mouse">Mouse
+        <input type="checkbox" name="dispositivo" value="teclado">Teclado
+      </div>
+
+      <div class="campo">
+        <label>Elija su género:</label>
+        <input type="radio" name="genero" value="hombre"> Hombre
+        <input type="radio" name="genero" value="mujer"> Mujer
+      </div>
+
+      <div class="campo">
+        <label for="pais">Seleccione un país:</label>
+        <select id="pais" name="pais">
+          <option value="Ecuador">Ecuador</option>
+          <option value="España">España</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Perú">Perú</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <center><input type="submit" value="Enviar datos"></center>
+      </div>
+    </form>
+
+    <div class="boton-regreso">
+      <button onclick="window.location.href='index.html'">Regresar a Inicio</button>
+    </div>
+  </div>
+
+</body>
+</html>

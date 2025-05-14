@@ -1,0 +1,196 @@
+/* Tipografía general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.navegacion .lista-menu {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navegacion .lista-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  transition: background 0.3s;
+}
+
+.navegacion .lista-menu li a:hover {
+  background-color: #555;
+}
+
+/* Contenido general */
+.contenido {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Secciones con borde */
+.seccion-borde {
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-borde h2 {
+  color: #333;
+}
+
+.imagen {
+  display: block;
+  margin: 15px auto;
+  width: 300px;      /* Ajusta el ancho que desees */
+  height: 200px;     /* Ajusta la altura que desees */
+  object-fit: cover; /* Ajusta la imagen al contenedor sin deformarla */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Enlaces */
+.enlace {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  border: 2px solid #0066cc;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.enlace:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Tabla */
+.tabla-componentes {
+  overflow-x: auto;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla th,
+.tabla td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabla th {
+  background-color: #333;
+  color: white;
+}
+
+/* Lista */
+.lista-perifericos {
+  list-style: square inside;
+  padding-left: 20px;
+}
+
+/* Estilo para el contenedor del título y el botón */
+.titulo-boton-contenedor {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.titulo-boton-contenedor h3 {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el botón dentro del contenedor */
+.boton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+
+/* Video */
+.video-contenedor {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.video-contenedor iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navegacion .lista-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabla th,
+  .tabla td {
+    font-size: 14px;
+  }
+
+  .video-contenedor iframe {
+    height: 240px;
+  }
+
+  /* Estilo para el iframe */
+  #pccomponentes iframe {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+
+
+}
